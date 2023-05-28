@@ -1063,6 +1063,8 @@ const sendMessageByWeChatTest = async (user, templateId, wxTemplateData) => {
     data: wxTemplateData,
   }
 
+  data.data.birthday_message.value = data.data.birthday_message.value.match(/还有(\d+)天/)?.[1] || 0
+
   // 发送消息
   const res = await axios.post(url, data, {
     headers: {
