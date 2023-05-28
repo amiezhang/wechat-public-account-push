@@ -1064,6 +1064,13 @@ const sendMessageByWeChatTest = async (user, templateId, wxTemplateData) => {
   }
 
   data.data.birthday_message.value = data.data.birthday_message.value.match(/还有(\d+)天/)?.[1] || 0
+  let loveWords = data.data.earthy_love_words.value.replace('。', '');
+  data.data.love_word_1 = {value: loveWords.slice(0, 20)}
+  data.data.love_word_2 = {value: loveWords.slice(20)}
+
+  const oneTalks = data.data.one_talk.value.replace('。', '');
+  data.data.one_talk_1 = {value: oneTalks.slice(0, 20)}
+  data.data.one_talk_2 = {value: oneTalks.slice(20)}
 
   // 发送消息
   const res = await axios.post(url, data, {
@@ -1075,6 +1082,7 @@ const sendMessageByWeChatTest = async (user, templateId, wxTemplateData) => {
 
   if (res.data && res.data.errcode === 0) {
     console.log(`${user.name}: 推送消息成功`)
+    console.log(data)
     return {
       name: user.name,
       success: true,

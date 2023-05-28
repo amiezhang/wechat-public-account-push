@@ -13,8 +13,8 @@ const USER_CONFIG = {
   // 使用微信测试号：公众号APP_SECRET
   APP_SECRET: '4dcc115c761aeffd0dbb80501c630442',
 
-  PROVINCE: '广东',
-  CITY: '深圳',
+  PROVINCE: '河北',
+  CITY: '张家口',
 
   USERS: [
     {
@@ -23,7 +23,7 @@ const USER_CONFIG = {
       // 使用微信测试号：扫码关注你的微信测试号后生成的一段字符串，在测试号后台能看到
       id: 'otDai6vNlhPElyiFpqMKGDnZLIXQ',
       // 使用微信测试号：你想对他发送的模板消息的模板ID
-      useTemplateId: 'Fa4fWbxgw-WH82nR_Xu4CvPKrUkB1QtjjTeFIxQZSPs',
+      useTemplateId: 'Ag4bLsVFw96kl-t_bpLgSt84C5htJinns2fsX6j_EjQ',
       // 新历生日, 仅用作获取星座运势, 格式必须为MM-DD
       // horoscopeDate: '12-27',
       festivals: [
@@ -41,30 +41,30 @@ const USER_CONFIG = {
         // { keyword: 'marry_day', date: '2022-09-09' },
       ],
     },
-    {
-      // 想要发送的人的名字
-      name: '猪猪',
-      // 使用微信测试号：扫码关注你的微信测试号后生成的一段字符串，在测试号后台能看到
-      id: 'otDai6qtg1oTLSphlL6uxGdqoUMs',
-      // 使用微信测试号：你想对他发送的模板消息的模板ID
-      useTemplateId: 'Fa4fWbxgw-WH82nR_Xu4CvPKrUkB1QtjjTeFIxQZSPs',
-      // 新历生日, 仅用作获取星座运势, 格式必须为MM-DD
-      // horoscopeDate: '12-27',
-      festivals: [
-        // 注意：此条配置日期为阴历日期，因为`type`中 “生日” 之前有 * 符号
-        // 注意：此条配置日期为阳历日期，因为`type`中 “生日” 之前没有 * 符号
-        {
-          type: '生日', name: '猪猪', year: '1996', date: '10-14',
-        },
-      ],
-      // 我们在一起已经有xxxx天了的配置
-      customizedDateList: [
-        // 在一起的日子
-        { keyword: 'love_day', date: '2023-01-25' },
-        // 结婚纪念日
-        // { keyword: 'marry_day', date: '2022-09-09' },
-      ],
-    },
+    // {
+    //   // 想要发送的人的名字
+    //   name: '猪猪',
+    //   // 使用微信测试号：扫码关注你的微信测试号后生成的一段字符串，在测试号后台能看到
+    //   id: 'otDai6qtg1oTLSphlL6uxGdqoUMs',
+    //   // 使用微信测试号：你想对他发送的模板消息的模板ID
+    //   useTemplateId: 'Ag4bLsVFw96kl-t_bpLgSt84C5htJinns2fsX6j_EjQ',
+    //   // 新历生日, 仅用作获取星座运势, 格式必须为MM-DD
+    //   // horoscopeDate: '12-27',
+    //   festivals: [
+    //     // 注意：此条配置日期为阴历日期，因为`type`中 “生日” 之前有 * 符号
+    //     // 注意：此条配置日期为阳历日期，因为`type`中 “生日” 之前没有 * 符号
+    //     {
+    //       type: '生日', name: '猪猪', year: '1996', date: '10-14',
+    //     },
+    //   ],
+    //   // 我们在一起已经有xxxx天了的配置
+    //   customizedDateList: [
+    //     // 在一起的日子
+    //     { keyword: 'love_day', date: '2023-01-25' },
+    //     // 结婚纪念日
+    //     // { keyword: 'marry_day', date: '2022-09-09' },
+    //   ],
+    // },
   ],
 
 
